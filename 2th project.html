@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Interior Designs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f8f8;
+color:#333;
+}
+
+/* Navbar */
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#c89b3c;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#c89b3c;
+}
+
+/* CTA Button */
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#c89b3c;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#a87f2f;
+transform:translateY(-2px);
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') center/cover;
+display:flex;
+align-items:center;
+padding:0 8%;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+position:relative;
+color:white;
+max-width:700px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+/* Services */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#222;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#c89b3c;
+}
+
+/* Portfolio */
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.portfolio img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* About */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+/* Testimonials */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Contact */
+
+.contact{
+background:#222;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact-buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.whatsapp-btn{
+background:#25D366;
+padding:14px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.call-btn{
+background:#c89b3c;
+padding:14px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">InteriorLux</div>
+
+<ul>
+<li><a href="about.html">Home</a></li>
+<li><a href="service section.html">Services</a></li>
+<li><a href="index.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Transform Your Space Into Luxury</h1>
+<p>
+We create elegant, modern and functional interiors for homes,
+apartments, offices and commercial spaces.
+</p>
+
+<a href="#contact" class="btn">
+Book Free Consultation
+</a>
+
+</div>
+</section>
+
+<section id="services">
+
+<div class="section-title">
+<h2>Our Services</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>Residential Design</h3>
+<p>Beautiful interiors for villas, apartments and homes.</p>
+</div>
+
+<div class="card">
+<h3>Office Design</h3>
+<p>Modern workplace solutions to improve productivity.</p>
+</div>
+
+<div class="card">
+<h3>Space Planning</h3>
+<p>Efficient layouts maximizing functionality and aesthetics.</p>
+</div>
+
+<div class="card">
+<h3>Furniture Design</h3>
+<p>Custom furniture tailored to your lifestyle.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<div class="section-title">
+<h2>Our Portfolio</h2>
+</div>
+
+<div class="portfolio">
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="about">
+
+<div>
+<h2>Why Choose Us?</h2>
+<br>
+<p>
+With over 10 years of experience, our team delivers
+premium interior solutions that combine luxury,
+comfort and functionality.
+</p>
+<br>
+
+<a href="#contact" class="btn">
+Get Design Proposal
+</a>
+
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f">
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Client Testimonials</h2>
+</div>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>
+"Excellent service and stunning design execution.
+Highly recommended!"
+</p>
+<br>
+<strong>- Sarah M.</strong>
+</div>
+
+<div class="testimonial">
+<p>
+"Our dream home became reality. Fantastic team."
+</p>
+<br>
+<strong>- John D.</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Ready To Design Your Dream Space?</h2>
+
+<p>Contact us today for a free consultation.</p>
+
+<div class="contact-buttons">
+
+<a href="tel:+919999999999" class="call-btn">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919999999999" class="whatsapp-btn">
+💬 WhatsApp Us
+</a>
+
+<a href="#" class="btn">
+📅 Schedule Meeting
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 InteriorLux. All Rights Reserved.
+</footer>
+
+</body>
+</html>
